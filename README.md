@@ -1,50 +1,74 @@
 # Ecommerce Selenium Automation
 
-Automation testing project for ecommerce flow using Selenium WebDriver with Java.  
-This project covers end-to-end user scenarios and demonstrates implementation of Page Object Model and data-driven testing.
+End-to-end automation testing project for an ecommerce application using Selenium WebDriver and Java.  
+This project demonstrates a scalable automation framework with Page Object Model and reusable components.
 
 ## Tech Stack
 
 - Java
 - Selenium WebDriver
 - TestNG
+- Maven
 - Page Object Model (POM)
-- Data Driven Testing (JSON / Excel)
+- Extent Reports
 
 ## Features
 
-- Login functionality (positive & negative scenarios)
-- Add product to cart
+- Login validation (positive & negative scenarios)
+- Product catalog interaction
+- Add to cart
 - Checkout process
-- Order validation
-- End-to-end purchase flow
+- Order confirmation
+- HTML test reporting
 
-## Test Scenarios
+## Test Coverage
 
 - User can login with valid credentials
 - User cannot login with invalid credentials
 - User cannot login with empty fields
 - User can add product to cart
-- User can complete checkout process successfully
+- User can complete checkout process
+- User can verify order in order history
 
+## Project Structure
+
+src/
+├── main/java/rahulshettyacademy
+│   ├── AbstractComponents
+│   ├── PageObjects
+│   └── Resources
+│
+├── test/java
+│   └── cucumber
+│
+reports/
+test-output/
+target/
 
 ## How to Run
 
-# install dependencies
-mvn clean install
+mvn clean install  
+mvn test  
 
-# run test
-mvn test
+## Reporting
+
+Extent Report is generated after test execution.
+
+Default location:
+reports/
 
 ## Notes
-This project focuses on building a maintainable test automation framework using Selenium.
-For comparison with Playwright implementation, check ecommerce-playwright-automation repository.
 
-## Why Selenium vs Playwright?
+- Uses Page Object Model for better maintainability
+- Common reusable methods are placed in AbstractComponents
+- Designed for scalable automation framework
 
-This project is part of a comparison between Selenium and Playwright implementation for the same application flow, to understand differences in:
+## Related Project
 
-- Execution speed
-- Stability (flaky test handling)
-- Code simplicity
-- Locator strategy
+This project has a Playwright version with the same test flow:
+
+ecommerce-playwright-automation
+
+This project has a Playwright version with the same test flow:
+
+ecommerce-playwright-automation
