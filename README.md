@@ -68,7 +68,3 @@ reports/
 This project has a Playwright version with the same test flow:
 
 ecommerce-playwright-automation
-
-This project has a Playwright version with the same test flow:
-
-ecommerce-playwright-automation
